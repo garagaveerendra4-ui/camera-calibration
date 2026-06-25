@@ -108,19 +108,3 @@ print(
     "\nTotal Reprojection Error:",
     average_reprojection_error
 )
-"""
-save_calibration(
-    camera_name="Analinear cam",
-    zoom_level="7x zoom",
-    image_count=len(objpoints),
-    camera_matrix=cameraMatrix,
-    dist_coeffs=distCoeffs,
-    reprojection_error=average_reprojection_error
-)
-
-cv_file=cv2.FileStorage("calibration_data.yaml",cv2.FILE_STORAGE_WRITE)
-cv_file.write("camera_matrix",cameraMatrix)
-cv_file.write("distcoefficient",distCoeffs)
-cv_file.release()
-print("calibration_data file saved successfully")
-"""
